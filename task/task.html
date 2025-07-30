@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="task.css">
 </head>
 <body>
     <h2>Marksheet Generator</h2>
     <div class="form">
         <input id="subject"/>
         <input id="marks"/>
-        <button onclick="addSubject()">Add Subject</button>
+        <button class="btn" onclick="addSubject()">Add Subject</button>
     </div>
     <table>
         <thead>
@@ -20,14 +21,14 @@
             <th>Status</th>
             <th>Actions</th>
         </thead>
-        <tbody>
+        <tbody class="table-body">
         </tbody>
         <tfoot>
             <tr>
-                <td>Total Subject</td>
-                <td>Total Passing Marks</td>
-                <td>Total Marks Obtained</td>
-                <td>Over Status</td>
+                <td id="sub-total">Total Subject</td>
+                <td id="passing-total">Total Passing Marks</td>
+                <td id="marks-total">Total Marks Obtained</td>
+                <td id="overall-status">Over Status</td>
             </tr>
         </tfoot>
     </table>
