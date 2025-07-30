@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Marksheet Generator</h2>
+    <div class="form">
+        <input id="subject"/>
+        <input id="marks"/>
+        <button onclick="addSubject()">Add Subject</button>
+    </div>
+    <table>
+        <thead>
+            <th>Subject</th>
+            <th>Passing Marks</th>
+            <th>Marks Obtained</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total Subject</td>
+                <td>Total Passing Marks</td>
+                <td>Total Marks Obtained</td>
+                <td>Over Status</td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="task.js"></script>
+</body>
+</html>
